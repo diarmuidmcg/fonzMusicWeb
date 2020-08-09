@@ -4,6 +4,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 import FonzDashboard from '@/plugins/main-plugins';
 
+const _144d0d28 = () => interopDefault(import('../pages/shop.vue' /* webpackChunkName: "pages/shop" */))
 const _7590e9e0 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -24,6 +25,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/shop",
+    component: _144d0d28,
+    name: "shop"
+  }, {
     path: "/",
     component: _7590e9e0,
     name: "index"
