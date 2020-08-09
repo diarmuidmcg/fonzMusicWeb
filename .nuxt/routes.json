@@ -1,16 +1,26 @@
 [
   {
+    "name": "about-us",
+    "path": "/about-us",
+    "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/about-us.vue",
+    "chunkName": "pages/about-us"
+  },
+  {
+    "name": "download",
+    "path": "/download",
+    "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/download.vue",
+    "chunkName": "pages/download"
+  },
+  {
     "name": "shop",
     "path": "/shop",
     "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/shop.vue",
-    "chunkName": "pages/shop",
-    "_name": "_144d0d28"
+    "chunkName": "pages/shop"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_7590e9e0"
+    "chunkName": "pages/index"
   }
 ]

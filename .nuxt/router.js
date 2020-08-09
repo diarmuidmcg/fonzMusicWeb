@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
-import FonzDashboard from '@/plugins/main-plugins';
 
+const _0f75ee10 = () => interopDefault(import('../pages/about-us.vue' /* webpackChunkName: "pages/about-us" */))
+const _e81bf68c = () => interopDefault(import('../pages/download.vue' /* webpackChunkName: "pages/download" */))
 const _144d0d28 = () => interopDefault(import('../pages/shop.vue' /* webpackChunkName: "pages/shop" */))
 const _7590e9e0 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -14,7 +15,6 @@ Router.prototype.push = function push (location, onComplete = emptyFn, onAbort) 
   return originalPush.call(this, location, onComplete, onAbort)
 }
 
-Vue.use(FonzDashboard);
 Vue.use(Router)
 
 export const routerOptions = {
@@ -25,6 +25,14 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/about-us",
+    component: _0f75ee10,
+    name: "about-us"
+  }, {
+    path: "/download",
+    component: _e81bf68c,
+    name: "download"
+  }, {
     path: "/shop",
     component: _144d0d28,
     name: "shop"
