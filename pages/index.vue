@@ -7,7 +7,7 @@
 </template>
 <script>
 // import AppHeader from "../components/globalComponents/appHeader";
-import homePage from "../components/homePageComponents/homePage";
+// import homePage from "../components/homePageComponents/homePage";
 // import hobbies from "../components/homePageComponents/hobbies";
 // import homeHeaderPhoto from "../components/homePageComponents/homeHeaderPhoto";
 // import appFooter from "../components/globalComponents/appFooter";
@@ -16,7 +16,7 @@ export default {
   components: {
     // AppHeader,
     // appFooter,
-    homePage
+    // homePage
     // welcomeToDD,
     // hobbies,
     // homeHeaderPhoto

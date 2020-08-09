@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
+import FonzDashboard from '@/plugins/main-plugins';
 
 const _7590e9e0 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -12,6 +13,7 @@ Router.prototype.push = function push (location, onComplete = emptyFn, onAbort) 
   return originalPush.call(this, location, onComplete, onAbort)
 }
 
+Vue.use(FonzDashboard);
 Vue.use(Router)
 
 export const routerOptions = {
