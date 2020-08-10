@@ -1,8 +1,10 @@
 <template>
-  <footer class="web-footer">
-    <contactFooter></contactFooter>
-    <brandFooter></brandFooter>
-    <emailSignupFooter></emailSignupFooter>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <contactFooter></contactFooter>
+      <brandFooter></brandFooter>
+      <emailSignupFooter></emailSignupFooter>
+    </div>
   </footer>
 </template>
 

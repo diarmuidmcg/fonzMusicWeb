@@ -51,7 +51,31 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Fonz Music","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Comfortaa:400,500|Muli|Spartan:400,500&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Merriweather|Poppins|Raleway&display=swap"}],"style":[],"script":[]},
+    head: {
+      "title": "Fonz Music",
+      "meta": [{
+        "charset": "utf-8"
+      }, {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      }, {
+        "hid": "description",
+        "name": "description",
+        "content": ""
+      }],
+      "link": [{
+        "rel": "stylesheet",
+        "href": "https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Comfortaa:400,500|Muli|Spartan:400,500&display=swap"
+      }, {
+        "rel": "stylesheet",
+        "href": "https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Merriweather|Poppins|Raleway&display=swap"
+      }, {
+        "rel": "stylesheet",
+        "href": "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      }],
+      "style": [],
+      "script": []
+    },
 
     router,
     nuxt: {
@@ -65,10 +89,13 @@ async function createApp(ssrContext, config = {}) {
           if (!transition) {
             transition = defaultTransition
           } else if (typeof transition === 'string') {
-            transition = Object.assign({}, defaultTransition, { name: transition })
-          } else {
-            transition = Object.assign({}, defaultTransition, transition)
-          }
+            transition = Object.assign({}, defaultTransition, {
+  name: transition
+})
+}
+else {
+  transition = Object.assign({}, defaultTransition, transition)
+}
           return transition
         })
         this.$options.nuxt.transitions = transitions

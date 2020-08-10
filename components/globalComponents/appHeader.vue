@@ -1,10 +1,13 @@
 <template>
   <div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 <header>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- <nav class="banner"> -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="center-nav my-0 mr-md-auto font-weight-normal">
+    <nuxt-link to="/"><img src="../../static/images/global-images/fonzLogoWordmarkBlack.png" /></nuxt-link>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm banner" >
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="left-nav nav-item">
@@ -15,9 +18,6 @@
         </li>
         <li class="left-nav nav-item">
           <nuxt-link to="/about-us">about us</nuxt-link>
-        </li>
-        <li class="center-nav nav-item">
-          <nuxt-link to="/"><img src="../../static/images/global-images/fonzLogoWordmarkBlack.png" /></nuxt-link>
         </li>
 
         <li class="right-nav nav-item">
