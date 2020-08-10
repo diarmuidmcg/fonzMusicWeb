@@ -1,7 +1,11 @@
 <template>
-  <div class="test">
-    <h3>test me</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <h3>test me</h3>
+    </div>
   </div>
+</div>
 </template>
 
 <script>

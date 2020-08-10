@@ -1,28 +1,33 @@
 <template>
-
+  <div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <header>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <nav class="banner">
-    <ul>
-      <li class="left-nav">
-        <nuxt-link to="/shop">pre-order</nuxt-link>
-      </li>
-      <li class="left-nav">
-        <nuxt-link to="/download">download</nuxt-link>
-      </li>
-      <li class="left-nav">
-        <nuxt-link to="/about-us">about us</nuxt-link>
-      </li>
-      <li class="center-nav">
-        <nuxt-link to="/"><img src="../../static/images/global-images/fonzLogoWordmarkBlack.png" /></nuxt-link>
-      </li>
+  <!-- <nav class="banner"> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="left-nav nav-item">
+          <nuxt-link to="/shop">pre-order</nuxt-link>
+        </li>
+        <li class="left-nav nav-item">
+          <nuxt-link to="/download">download</nuxt-link>
+        </li>
+        <li class="left-nav nav-item">
+          <nuxt-link to="/about-us">about us</nuxt-link>
+        </li>
+        <li class="center-nav nav-item">
+          <nuxt-link to="/"><img src="../../static/images/global-images/fonzLogoWordmarkBlack.png" /></nuxt-link>
+        </li>
 
-      <li class="right-nav">
-        <nuxt-link to="/cart">cart</nuxt-link>
-      </li>
-    </ul>
+        <li class="right-nav nav-item">
+          <nuxt-link to="/cart">cart</nuxt-link>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
+</div>
 </template>
 
 <script>
