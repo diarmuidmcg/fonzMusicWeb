@@ -42,6 +42,9 @@ export default {
     // "@/assets/css/common.css"
   ],
 
+  plugins : [
+    '~plugins/main-plugins'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
