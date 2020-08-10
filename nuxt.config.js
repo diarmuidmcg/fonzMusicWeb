@@ -1,3 +1,4 @@
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 export default {
   mode: "universal",
 
@@ -62,6 +63,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
+   modules: [
+     'bootstrap-vue/nuxt'
+   ],
+   // modules: [
+     // '@/modules/main-modules'
+     // BootstrapVue
+   // ],
   // modules: [
   //   // modules for full static before `nuxt export` (coming in v2.12)
   //   "@/modules/static",

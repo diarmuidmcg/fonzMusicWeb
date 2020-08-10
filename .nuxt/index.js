@@ -11,6 +11,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_bootstrapvue_427a46bd from 'nuxt_plugin_bootstrapvue_427a46bd' // Source: ./bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_mainplugins_7a75963a from 'nuxt_plugin_mainplugins_7a75963a' // Source: ../plugins/main-plugins (mode: 'all')
 
 // Component: <ClientOnly>
@@ -164,6 +165,10 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
+  if (typeof nuxt_plugin_bootstrapvue_427a46bd === 'function') {
+    await nuxt_plugin_bootstrapvue_427a46bd(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_mainplugins_7a75963a === 'function') {
     await nuxt_plugin_mainplugins_7a75963a(app.context, inject)
   }
@@ -178,13 +183,9 @@ async function createApp(ssrContext, config = {}) {
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
     await new Promise((resolve, reject) => {
-      router.push(ssrContext.url, resolve, (err) => {
-        // https://github.com/vuejs/vue-router/blob/v3.3.4/src/history/errors.js
-        if (!err._isRouter) return reject(err)
-        if (err.type !== 1 /* NavigationFailureType.redirected */) return resolve()
-
+      router.push(ssrContext.url, resolve, () => {
         // navigated to a different route in router guard
-        const unregister = router.afterEach(async (to, from) => {
+        const unregister = router.afterEach(async (to, from, next) => {
           ssrContext.url = to.fullPath
           app.context.route = await getRouteData(to)
           app.context.params = to.params || {}

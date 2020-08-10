@@ -1,5 +1,7 @@
 <template>
+
 <header>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <nav class="banner">
     <ul>
       <li class="left-nav">
