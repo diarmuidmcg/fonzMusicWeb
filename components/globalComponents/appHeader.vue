@@ -1,38 +1,68 @@
-<template>
+<!-- <template>
   <div>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-<header>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- <nav class="banner"> -->
-  <div class="center-nav my-0 mr-md-auto font-weight-normal">
-    <nuxt-link to="/"><img src="../../static/images/global-images/fonzLogoWordmarkBlack.png" /></nuxt-link>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm banner" >
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="left-nav nav-item">
-          <nuxt-link to="/shop">pre-order</nuxt-link>
-        </li>
-        <li class="left-nav nav-item">
-          <nuxt-link to="/download">download</nuxt-link>
-        </li>
-        <li class="left-nav nav-item">
-          <nuxt-link to="/about-us">about us</nuxt-link>
-        </li>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <header>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
 
-        <li class="right-nav nav-item">
-          <nuxt-link to="/cart">cart</nuxt-link>
-        </li>
-      </ul>
+      <div class="center-nav my-0 mr-md-auto font-weight-normal">
+        <nuxt-link to="/"
+          ><img
+            src="../../static/images/global-images/fonzLogoWordmarkBlack.png"
+        /></nuxt-link>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-black border-bottom shadow-sm banner"
+      >
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto col-md-4">
+            <li class="left-nav nav-item">
+              <nuxt-link to="/shop">pre-order</nuxt-link>
+            </li>
+            <li class="left-nav nav-item">
+              <nuxt-link to="/download">download</nuxt-link>
+            </li>
+            <li class="left-nav nav-item">
+              <nuxt-link to="/about-us">about us</nuxt-link>
+            </li>
+
+            <li class="right-nav nav-item">
+              <nuxt-link to="/cart">cart</nuxt-link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+</template> -->
+
+<template>
+  <header class="pt-4 my-md-5 pt-md-2">
+    <div class="row">
+      <leftNav class="col-md-4"></leftNav>
+      <centerNav class="col-md-4"></centerNav>
+      <rightNav class="col-md-4"></rightNav>
     </div>
-  </nav>
-</header>
-</div>
+  </header>
 </template>
 
 <script>
+import leftNav from "./appHeaderComponents/leftNav";
+import centerNav from "./appHeaderComponents/centerNav";
+import rightNav from "./appHeaderComponents/rightNav";
+
 export default {
-  name: "appHeader"
+  name: "appHeader",
+  components: {
+    leftNav,
+    centerNav,
+    rightNav
+  }
 };
 </script>
 
@@ -118,68 +148,27 @@ h3 {
 
 /* BANNER
 ------------------------------------------*/
-.banner {
-  grid-area: banner;
-  position: absolute;
-  width: 99%;
-  /* background: rgba(215, 225, 235, 100%); */
-  color: #602e3f;
+header {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "leftNav centerNav rightNav ";
   text-align: center;
-  margin-top: 15px;
-  padding: 0;
-}
-
-.banner a {
   padding: 10px;
-  padding-top: 20px;
-
-  text-decoration: none;
-  color: black;
-  font-family: "Spartan", sans-serif;
+  margin-top: 25px;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-size: 20px;
+  line-height: 1.25;
+  width: 100%;
 }
-
-.banner a:hover {
-  text-decoration: line-through;
-}
-
-.banner ul {
+header ul {
   list-style-position: outside;
   list-style-type: none;
   padding: 0px;
 }
-
-.banner li {
+header li {
   display: inline-block;
-  font-size: 20px;
-
-  /* padding-left: 10%;
-padding-right: 10%; */
-}
-
-.banner .left-nav {
-  float: left;
-  color: black;
-}
-
-.banner .left-nav a {
-  /* color: black; */
-}
-
-.banner .right-nav {
-  float: right;
-}
-
-.banner .center-nav {
-  /* padding: 0; */
-  padding-right: 20%;
-  /* margin: 0; */
-}
-
-.banner .center-nav img {
-  width: 125px;
-  display: block;
-  /* float: left; */
-  /* position: absolute; */
-  margin: 0 auto;
+  padding: 5px;
 }
 </style>

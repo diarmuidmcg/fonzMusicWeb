@@ -2,25 +2,25 @@
   {
     "name": "about-us",
     "path": "/about-us",
-    "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/about-us.vue",
+    "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/about-us.vue",
     "chunkName": "pages/about-us"
   },
   {
     "name": "download",
     "path": "/download",
-    "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/download.vue",
+    "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/download.vue",
     "chunkName": "pages/download"
   },
   {
     "name": "shop",
     "path": "/shop",
-    "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/shop.vue",
+    "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/shop.vue",
     "chunkName": "pages/shop"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/mnt/c/Users/dermo/Documents/Projects/Spotify/fonzMusicWeb/fonzMusicWeb/pages/index.vue",
+    "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/index.vue",
     "chunkName": "pages/index"
   }
 ]
