@@ -82,7 +82,7 @@ export default {
 html {
   box-sizing: border-box;
   overflow-x: hidden;
-  color: #67001a;
+  color: #ff9425;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -116,16 +116,18 @@ a {
 
 a:hover {
   text-decoration: line-through;
+  color: #ff9425;
 }
 
 h1,
 h2 {
   font-family: "Spartan", sans-serif;
   font-weight: 400;
+  text-align: center;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -136,7 +138,10 @@ h2 {
 }
 
 h3 {
-  margin: 25px;
+  padding: 25px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
 }
 
 .content-wrap {
@@ -156,7 +161,7 @@ header {
   padding: 10px;
   margin-top: 25px;
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Spartan", sans-serif;
   /*font-family: 'Merriweather', serif;*/
   font-size: 20px;
   line-height: 1.25;
@@ -170,5 +175,8 @@ header ul {
 header li {
   display: inline-block;
   padding: 5px;
+}
+header a {
+  font-family: "Spartan", sans-serif;
 }
 </style>

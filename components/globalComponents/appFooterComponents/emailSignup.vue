@@ -1,16 +1,28 @@
 <template>
-<div class="join-newsletter col-lg-4">
-  <h3>join the Fonz Friends</h3>
-  <div class="email-signup">
-    <input id="signup_firstname" class="input" type="text" name="First Name" placeholder="first name" />
-    <p></p>
-    <input id="signup_email" class="input" type="text" name="email" placeholder="email" />
-    <p></p>
-    <button id="subscribe_button" type="submit" name="subscribe">
-      Subscribe
-    </button>
+  <div class="join-newsletter col-lg-4">
+    <h3>join the Fonz Friends</h3>
+    <div class="email-signup">
+      <input
+        id="signup_firstname"
+        class="input"
+        type="text"
+        name="First Name"
+        placeholder="first name"
+      />
+      <p></p>
+      <input
+        id="signup_email"
+        class="input"
+        type="text"
+        name="email"
+        placeholder="email"
+      />
+      <p></p>
+      <button id="subscribe_button" type="submit" name="subscribe">
+        Subscribe
+      </button>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -29,8 +41,8 @@ export default {
   text-align: center;
   font-family: "Spartan", sans-serif;
   padding: 5px;
-  color: #67001a;
-  border: 3px solid #67001a;
+  color: grey;
+  border: 3px solid #ff9425;
   background-color: white;
   resize: none;
   border-radius: 5px;
@@ -39,14 +51,14 @@ export default {
 #subscribe_button {
   font-size: 16px;
   color: white;
-  background-color: #67001a;
+  background-color: #ff9425;
   border-radius: 5px;
   border: none;
   padding: 12px 40px;
 }
 
 #subscribe_button:hover {
-  color: #67001a;
+  color: #ff9425;
   background-color: white;
 }
 </style>

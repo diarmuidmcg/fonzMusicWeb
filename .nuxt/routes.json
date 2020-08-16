@@ -3,24 +3,28 @@
     "name": "about-us",
     "path": "/about-us",
     "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/about-us.vue",
-    "chunkName": "pages/about-us"
+    "chunkName": "pages/about-us",
+    "_name": "_4e0a5456"
   },
   {
     "name": "download",
     "path": "/download",
     "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/download.vue",
-    "chunkName": "pages/download"
+    "chunkName": "pages/download",
+    "_name": "_6af32a00"
   },
   {
     "name": "shop",
     "path": "/shop",
     "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/shop.vue",
-    "chunkName": "pages/shop"
+    "chunkName": "pages/shop",
+    "_name": "_24eb866e"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/diarmuidmcgonagle/IdeaProjects/BlackJack/fonzMusicWeb/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_6f2f8aec"
   }
 ]

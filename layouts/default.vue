@@ -35,7 +35,7 @@ export default {
 }
 .appHeader {
   grid-area: header;
-  height: 150px;
+  height: 200px;
 }
 .content {
   grid-area: content;

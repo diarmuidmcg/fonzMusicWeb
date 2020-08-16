@@ -64,7 +64,7 @@ footer p {
   color: black;
 }
 footer a {
-  color: #67001a;
+  color: #ff9425;
   font-size: 16px;
 
   margin-bottom: 120px;
